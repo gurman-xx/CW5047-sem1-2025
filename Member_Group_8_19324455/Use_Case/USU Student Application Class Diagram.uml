@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_E_hyYMOYEfCEUdjU3yt62w" name="USU Student Application Class Diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_FAvTUMOYEfCEUdjU3yt62w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KnReAMOYEfCEUdjU3yt62w" name="Event" visibility="private">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlD7oMObEfCEUdjU3yt62w" name="eventId" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FVVGcMOcEfCEUdjU3yt62w" name="eventName" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iymcwMOcEfCEUdjU3yt62w" name="eventDate" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qUAYsMOcEfCEUdjU3yt62w" name="societyId" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lUijIMOeEfCEUdjU3yt62w" name="addEvent">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_3E_tAMOeEfCEUdjU3yt62w" name="eventName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_N82OgMOfEfCEUdjU3yt62w" name="eventDate">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_SOzL4MOfEfCEUdjU3yt62w" name="societyId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EARlwMOhEfCEUdjU3yt62w" name="removeEvent"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_K0UscMOhEfCEUdjU3yt62w" name="updateEvent">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_R-qMMMOhEfCEUdjU3yt62w" name="eventName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_dmGJYMOhEfCEUdjU3yt62w" name="eventDate">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hVS_AMOhEfCEUdjU3yt62w" name="societyId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LBnQoMOYEfCEUdjU3yt62w" name="eventParticipation">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IYscAMSoEfCEUdjU3yt62w" name="participationId" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_O50msMSoEfCEUdjU3yt62w" name="eventId" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WH5W8MSoEfCEUdjU3yt62w" name="studentId" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_xLOaYMSoEfCEUdjU3yt62w" name="registerForEvent">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_1bmqcMSoEfCEUdjU3yt62w" name="eventid">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4Yt70MSoEfCEUdjU3yt62w" name="studentId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Z6GAwMSpEfCEUdjU3yt62w" name="cancelRegistration">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_eIUUsMSpEfCEUdjU3yt62w" name="participationId" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LZ6b4MOYEfCEUdjU3yt62w" name="Student">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CbnPAMSnEfCEUdjU3yt62w" name="studentId" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KTXuEMSqEfCEUdjU3yt62w" name="studentName" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TCah0MSqEfCEUdjU3yt62w" name="studentEmail" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_hK608MSnEfCEUdjU3yt62w" name="getStudentInfo"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FC7CsMVbEfCEUdjU3yt62w" memberEnd="_FC_7MMVbEfCEUdjU3yt62w _FDBJUMVbEfCEUdjU3yt62w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FC_UIMVbEfCEUdjU3yt62w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FC_UIcVbEfCEUdjU3yt62w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FC_7MMVbEfCEUdjU3yt62w" name="eventparticipation" type="_LBnQoMOYEfCEUdjU3yt62w" association="_FC7CsMVbEfCEUdjU3yt62w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ODu74MVbEfCEUdjU3yt62w" name="LiteralInteger1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ODvi8MVbEfCEUdjU3yt62w" name="LiteralUnlimitedNatural1" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FDBJUMVbEfCEUdjU3yt62w" name="event" type="_KnReAMOYEfCEUdjU3yt62w" association="_FC7CsMVbEfCEUdjU3yt62w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Jdja8MVbEfCEUdjU3yt62w" memberEnd="_JdlQIsVbEfCEUdjU3yt62w _JdmeQMVbEfCEUdjU3yt62w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JdlQIMVbEfCEUdjU3yt62w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JdlQIcVbEfCEUdjU3yt62w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JdlQIsVbEfCEUdjU3yt62w" name="eventparticipation" type="_LBnQoMOYEfCEUdjU3yt62w" association="_Jdja8MVbEfCEUdjU3yt62w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R_BswMVbEfCEUdjU3yt62w" name="LiteralInteger1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R_CT0MVbEfCEUdjU3yt62w" name="LiteralUnlimitedNatural1" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JdmeQMVbEfCEUdjU3yt62w" name="student" type="_LZ6b4MOYEfCEUdjU3yt62w" association="_Jdja8MVbEfCEUdjU3yt62w"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_aiiA0MOYEfCEUdjU3yt62w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ailrMMOYEfCEUdjU3yt62w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
