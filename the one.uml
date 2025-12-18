@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LZN5cM46EfC6BO7pOsoz7g" name="the one">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_LZlF0M46EfC6BO7pOsoz7g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_QkK7YM46EfC6BO7pOsoz7g" name="society leader app">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_9zbuUM47EfC6BO7pOsoz7g" name="Port4" aggregation="composite"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_jp9ggM46EfC6BO7pOsoz7g" name="society management API"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_npJ58M46EfC6BO7pOsoz7g" name="event management API"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_pytAYM46EfC6BO7pOsoz7g" name="communication API"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_oxinsNV0EfCNbPwP_Tlw3g" name="INotificationService">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_svcnsNV0EfCNbPwP_Tlw3g" name="Port1" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_tU5eINV0EfCNbPwP_Tlw3g" name="CopyOf_Port1_1" aggregation="composite"/>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_2Wy8cNV0EfCNbPwP_Tlw3g" name="IPromotionService"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_5AxPYNV0EfCNbPwP_Tlw3g" name="IStorageService"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_7sdZkNV0EfCNbPwP_Tlw3g" name="ISocietyApproval"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_-H0BsNV0EfCNbPwP_Tlw3g" name="ISocietyTermination"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_aJTXsM48EfC6BO7pOsoz7g" client="_QkK7YM46EfC6BO7pOsoz7g" supplier="_V5IN4M46EfC6BO7pOsoz7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_SfZ5AM46EfC6BO7pOsoz7g" name="student union management">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_2lO3sM46EfC6BO7pOsoz7g" name="society approval service"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_6Tn1AM46EfC6BO7pOsoz7g" name="society termination review service"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_hPwu8M46EfC6BO7pOsoz7g" name="Interface1"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_hbuuYM46EfC6BO7pOsoz7g" name="Interface2"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_hrJDYM46EfC6BO7pOsoz7g" name="Interface3"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_NV-2MM48EfC6BO7pOsoz7g" client="_SfZ5AM46EfC6BO7pOsoz7g" supplier="_QkK7YM46EfC6BO7pOsoz7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_TyU5cM46EfC6BO7pOsoz7g" name="USU cloud backend">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="__KZ9wM46EfC6BO7pOsoz7g" name="promotion service"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_ETn6UM47EfC6BO7pOsoz7g" name="storage service"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_Bp10oM47EfC6BO7pOsoz7g" name="notification service"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_V5IN4M46EfC6BO7pOsoz7g" name="usu operation system">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_HDey0M47EfC6BO7pOsoz7g" name="national event sync service"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_XxonoM46EfC6BO7pOsoz7g" name="student app">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_KMDGQM47EfC6BO7pOsoz7g" name="event subscription consumer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_D8U_MM48EfC6BO7pOsoz7g" client="_9zbuUM47EfC6BO7pOsoz7g" supplier="_jp9ggM46EfC6BO7pOsoz7g"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_eHkkEM48EfC6BO7pOsoz7g" client="_pytAYM46EfC6BO7pOsoz7g" supplier="_XxonoM46EfC6BO7pOsoz7g"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_0dzz0NVvEfCNbPwP_Tlw3g" name="Student union management">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_2dldwNVwEfCNbPwP_Tlw3g" name="approve" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_37vd0NVwEfCNbPwP_Tlw3g" name="terminate" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_nr4PQNW4EfCoAcC1RAyevA" client="_0dzz0NVvEfCNbPwP_Tlw3g" supplier="_EwVSYNW4EfCoAcC1RAyevA" contract="_EwVSYNW4EfCoAcC1RAyevA"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_o3IhcNW4EfCoAcC1RAyevA" client="_0dzz0NVvEfCNbPwP_Tlw3g" supplier="_EgtiANW4EfCoAcC1RAyevA" contract="_EgtiANW4EfCoAcC1RAyevA"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_xOdJoNV0EfCNbPwP_Tlw3g" name="IPromotionService"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_2J7XYNVvEfCNbPwP_Tlw3g" name="USU cloud backend">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_h_wHoNVwEfCNbPwP_Tlw3g" name="notification" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_km2swNVwEfCNbPwP_Tlw3g" name="promotion" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_lHhw4NVwEfCNbPwP_Tlw3g" name="storage" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_gGDGUNW4EfCoAcC1RAyevA" client="_2J7XYNVvEfCNbPwP_Tlw3g" supplier="_DZQxwNW4EfCoAcC1RAyevA" contract="_DZQxwNW4EfCoAcC1RAyevA"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_jfQd0NW4EfCoAcC1RAyevA" client="_2J7XYNVvEfCNbPwP_Tlw3g" supplier="_EXhJwNW4EfCoAcC1RAyevA" contract="_EXhJwNW4EfCoAcC1RAyevA"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_laUcUNW4EfCoAcC1RAyevA" client="_2J7XYNVvEfCNbPwP_Tlw3g" supplier="_Eb9k4NW4EfCoAcC1RAyevA" contract="_Eb9k4NW4EfCoAcC1RAyevA"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_K4b0gNV1EfCNbPwP_Tlw3g" name="INotificationService">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_K4b0gdV1EfCNbPwP_Tlw3g" name="Port1" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_K4b0gtV1EfCNbPwP_Tlw3g" name="CopyOf_Port1_1" aggregation="composite"/>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_K4b0g9V1EfCNbPwP_Tlw3g" name="IPromotionService"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_K4cbkNV1EfCNbPwP_Tlw3g" name="IStorageService"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_K4cbkdV1EfCNbPwP_Tlw3g" name="ISocietyApproval"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_K4cbktV1EfCNbPwP_Tlw3g" name="ISocietyTermination"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_3YPkoNVvEfCNbPwP_Tlw3g" name="student app">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_6RcJ4NVwEfCNbPwP_Tlw3g" name="eventSubscription" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_YSqFUNVyEfCNbPwP_Tlw3g" name="society leader app">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_3eR-YNVzEfCNbPwP_Tlw3g" name="ISocietyApproval" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_6glRwNVzEfCNbPwP_Tlw3g" name="ISocietyTermination" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_9yRsANVzEfCNbPwP_Tlw3g" name="INotificationService" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_BY3YMNV0EfCNbPwP_Tlw3g" name="IPromotionService" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_DpaegNV0EfCNbPwP_Tlw3g" name="IStorageService" aggregation="composite"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_EgtiANW4EfCoAcC1RAyevA" name="ISocietyTermination"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_EwVSYNW4EfCoAcC1RAyevA" name="ISocietyApproval"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_Eb9k4NW4EfCoAcC1RAyevA" name="IStorageService"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_EXhJwNW4EfCoAcC1RAyevA" name="IPromotionService"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_DZQxwNW4EfCoAcC1RAyevA" name="INotificationService"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sBRUQM47EfC6BO7pOsoz7g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sBSiYM47EfC6BO7pOsoz7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
